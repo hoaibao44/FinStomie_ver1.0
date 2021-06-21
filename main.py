@@ -22,7 +22,7 @@ if __name__ == '__main__':
     TODAY_NAV = 640000000
     base_path = os.getcwd()
     data_path = os.path.join(base_path,'data.xlsx')
-    data_df = pd.read_excel(data_path, sheet_name=0, header=0)
+    data_df = pd.read_excel(data_path, sheet_name=0, header=0,engine='openpyxl')
 
 
     date_list = list(set(data_df['Date'].tolist()))
