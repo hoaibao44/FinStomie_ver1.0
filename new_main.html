@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Stormie Capital</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@0.8.0/dist/material-components-web.min.css">  
+    <link id="light-theme-style" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://unpkg.com/material-components-web@0.8.0/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="testing_css.css">
+    <script src="testing_js.js"></script>
+</head>
+ 
+<body>
+    <div class="mdc-component mdc-component__toolbar">
+        
+            <section class="app-bar"></section>
+            <header class="mdc-toolbar mdc--theme-primary">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <i class="mdc-icon-toggle material-icons" role="button" aria-label="Search">menu</i> 
+                    <span class="mdc-toolbar__title">Stormie Capital</span>
+                </section>
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                    <i class="mdc-icon-toggle material-icons" role="button" aria-label="Search">search</i> 
+                    <i class="mdc-icon-toggle material-icons" role="button" aria-label="Menu">more_vert</i>
+                </section>
+            </header>
+       
+    </div>    
+
+    <span class="flex"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="mdc-components">
+                    <div class="mdc-components__section">
+                        <div class="mdc-components__column--size-medium">
+                            <p>Total NAV</p>
+                            <div class="mdc-component__section mdc-component__section--size-narrow">
+                                <div dir-horizontal="" class="mdc-component__containers">
+                                    
+                                    <div class="mdc-component__containers__primary mdc-textfield--theme-primary">
+                                        <p>21/04/12</p>
+                                        <div class="mdc-textfield"><input type="text" id="textfield-primary" class="mdc-textfield__input text-right" placeholder="Single-line input label" value=" 521,500,000 VND">
+                                        </div>
+                                    </div>
+                                    <div class="mdc-component__containers__secondary mdc-textfield--theme-secondary">
+                                        <p>21/04/01</p>
+                                        <div class="mdc-textfield"><input type="text" id="textfield-primary" class="mdc-textfield__input text-right" placeholder="Single-line input label" value=" 488,500,000 VND"> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="mt-5">Watch List/Long term</p>
+                            <div class="mdc-component__section mdc-component__section--size-medium">    
+                                <table class="table" style="font-size: 0.7rem !important;">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Sym</th>
+                                        <th scope="col">Volumn</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Total</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                 
+                            </div>
+                            <p class="mt-5">Watch List/Short term</p>
+                            <div class="mdc-component__section mdc-component__section--size-medium">    
+                                <table class="table" style="font-size: 0.7rem !important;">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Sym</th>
+                                        <th scope="col">Volumn</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Total</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">NKG</th>
+                                        <td>3,000</td>
+                                        <td>23,250</td>
+                                        <td>69,750,000</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="container" class="container mt-5" style="height:589px; width:100%;"></div>
+                <div id="chart_2" class="container mt-5" style="height:589px; width:100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+
+    <script>
+      anychart.onDocumentLoad(function() {
+        // create a chart and set the data
+        // as Array of Arrays
+        var chart = anychart.pie([
+            ["admin001", 462255305],
+            ["Client001", 38972586],
+            ["Client002", 20272109],
+        ]);
+        chart.title("Stormie Capital -- All shares (%)");
+        chart.container("container").draw();
+
+        // create a chart and set the data
+        // as Array of Arrays
+        var chart = anychart.pie([
+            ["admin001", 462255305],
+            ["Client001", 38972586],
+            ["Client002", 20272109],
+        ]);
+        chart.title("Stormie Capital -- All shares (%)");
+        chart.container("chart_2").draw();
+
+
+    });
+         
+    </script>
+    
+</body>
