@@ -19,7 +19,7 @@ def adjust_per(users_dict,sub_users_dict,X,Y):
 
 if __name__ == '__main__':
     global base_path, data_path, output_path
-    TODAY_NAV = 641500000
+    TODAY_NAV = 641600000
     base_path = os.getcwd()
     data_path = os.path.join(base_path,'data.xlsx')
     data_df = pd.read_excel(data_path, sheet_name=0, header=0,engine='openpyxl')
