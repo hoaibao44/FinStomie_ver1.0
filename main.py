@@ -19,8 +19,8 @@ def adjust_per(users_dict,sub_users_dict,X,Y):
 
 if __name__ == '__main__':
     global base_path, data_path, output_path
-    Basic_nav = 553.1 *1000000
-    Future_nav = 87.7 *1000000
+    Basic_nav = 570.1 *1000000
+    Future_nav = 90 *1000000
     TODAY_NAV = Basic_nav+Future_nav
     base_path = os.getcwd()
     data_path = os.path.join(base_path,'data.xlsx')
